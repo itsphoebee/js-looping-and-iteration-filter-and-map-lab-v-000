@@ -16,7 +16,7 @@ function exactMatch(drivers, attribute){
     let newCollection = [];
 
     for (const key in attribute) {
-      newCollection = driver[key] === attribute[key];
+      newCollection.push(driver[key] === attribute[key]);
     }
     return newCollection;
   });
