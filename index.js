@@ -11,4 +11,5 @@ function driverNamesWithRevenueOver(drivers,revenue){
     return driver.revenue > revenue
     newCollection.push(driver.name)
   });
+  return newCollection;
 }
